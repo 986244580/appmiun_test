@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="dad" verbose="1" >
+    <listeners>
+        <listener class-name="listerners.TestListener"></listener>
+        <listener class-name="listerners.ReRun"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+
+    </listeners>
+
+    <test name="Regression1">
+        <classes>
+<!--            <class name="testcases.login.LoginPermissionCheck"></class>-->
+            <class name="testcases.versioncheck.VersionCheck"/>
+        </classes>
+    </test>
+</suite>
